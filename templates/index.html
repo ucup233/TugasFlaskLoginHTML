@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login HTML</title>
+    <script type = "text/javascript" 
+         src = "{{ url_for('static', filename = 'hello.js') }}" ></script>
+</head>
+<body>
+    <input type = "button" onclick = "sayHello()" value = "Say Hello" />
+    <form action = "/login" method = "post">
+        <h2>Login Bang</h2>
+        <p>Enter Name:</p>
+        <p><input type = "text" name = "nm" /></p>
+        <p><input type = "submit" value = "submit" /></p>
+     </form>  
+</body>
+</html>
